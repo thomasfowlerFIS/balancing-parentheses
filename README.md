@@ -1,10 +1,17 @@
 # Bonus 1: Balancing Parentheses
 
-**Fork and then clone me!**
+## Learning Goals
 
-For parentheses to be considered balanced, there must an opening parenthesis followed by a matching closing parenthesis. Given a string containing only parentheses, return the number of additional parentheses needed for the string to be considered balanced. The input string will have a minimum length of 1.
+- Practice algorithmic problem solving
 
-```
+## Instructions
+
+For parentheses to be considered balanced, there must an opening parenthesis
+followed by a matching closing parenthesis. Given a string containing only
+parentheses, return the number of additional parentheses needed for the string
+to be considered balanced. The input string will have a minimum length of 1.
+
+```txt
 Input: '(()())'
 Output: 0
 
@@ -15,9 +22,10 @@ Input: ')'
 Output: 1
 ```
 
-Use the language of your choosing. We've included starter files for some languages where you can pseudocode, explain your solution and code.
+Use the language of your choosing. We've included starter files for some
+languages where you can pseudocode, explain your solution and code.
 
-## Before you start coding:
+## Before you start coding
 
 1. Rewrite the problem in your own words
 2. Validate that you understand the problem
