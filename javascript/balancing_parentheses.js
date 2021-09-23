@@ -1,5 +1,6 @@
 const balancingParentheses = (string) => {
-  let parensMap = string.split('').reduce((p, c) => {
+  let parens = string.split('')
+  let parensMap = parens.reduce((p, c) => {
     c === '(' ? p[')']++ : p['(']++
     return p
   }, {'(': 0, ')': 0})
@@ -11,19 +12,16 @@ const balancingParentheses = (string) => {
 
 if (require.main === module) {
   // add your own tests in here
-  console.log('(()())')
   console.log("Expecting: 0");
   console.log(balancingParentheses('(()())'));
 
   console.log("");
 
-  console.log('()))')
   console.log("Expecting: 2");
   console.log(balancingParentheses('()))'));
 
   console.log("");
 
-  console.log(')');
   console.log("Expecting: 1");
   console.log(balancingParentheses(')'));
 }
