@@ -4,10 +4,10 @@ const balancingParentheses = (string) => {
     c === '(' ? p[')']++ : p['(']++
     return p
   }, {'(': 0, ')': 0})
- 
-  return parensMap['('] === parensMap[')'] && 
-    parens[0] === ')' && parens[parens.length - 1] === '(' ?
-         2 : Math.max(parensMap['('], parensMap[')']) - Math.min(parensMap['('], parensMap[')'])
+  let lCount = parensMap['(']
+  let rCount =  parensMap[')']
+  return lCount === rCount && parens[0] === ')' && parens[parens.length - 1] === '(' ?
+         2 : Math.max(lCount, rCount) - Math.min(lCount, rCount)
 }
 
 if (require.main === module) {
