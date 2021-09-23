@@ -1,11 +1,11 @@
 const balancingParentheses = (string) => {
-  let parens = string.split('')
-  let parensMap = parens.reduce((p, c) => {
+  const parens = string.split('')
+  const parensMap = parens.reduce((p, c) => {
     c === '(' ? p[')']++ : p['(']++
     return p
   }, {'(': 0, ')': 0})
-  let lCount = parensMap['(']
-  let rCount =  parensMap[')']
+  const lCount = parensMap['(']
+  const rCount =  parensMap[')']
   return lCount === rCount && parens[0] === ')' && parens[parens.length - 1] === '(' ?
          2 : Math.abs(lCount - rCount)
 }
