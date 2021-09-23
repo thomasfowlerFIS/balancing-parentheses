@@ -7,7 +7,6 @@ const balancingParentheses = (string) => {
   let lCount = parensMap['(']
   let rCount =  parensMap[')']
   return lCount === rCount && parens[0] === ')' && parens[parens.length - 1] === '(' ?
-        //  2 : Math.max(lCount, rCount) - Math.min(lCount, rCount)
          2 : Math.abs(lCount - rCount)
 }
 
